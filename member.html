@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FitTrack | Member Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>FITTRACK</h2>
+
+            <p>Member Panel</p>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="#" onclick="showSection('dashboard')">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('profile')">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('membership')">
+                    <i class="fa-solid fa-id-card"></i>
+                    Membership
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('attendance')">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('payments')">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Payments
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('announcements')">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    Announcements
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('settings')">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="content">
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard" class="page-section">
+
+            <header>
+
+                <h1>Member Dashboard</h1>
+
+                <div class="admin-profile">
+
+                    <i class="fa-solid fa-circle-user"></i>
+
+                    <span>Juan Dela Cruz</span>
+
+                </div>
+
+            </header>
+
+            <div class="welcome-card">
+
+                <h2>Welcome, Juan! 💪</h2>
+
+                <p>
+
+                    View your membership, attendance,
+                    payments, and gym announcements.
+
+                </p>
+
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <i class="fa-solid fa-id-card"></i>
+
+                    <h3>Membership</h3>
+
+                    <h2>Active</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    <h3>Days Remaining</h3>
+
+                    <h2>22</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <h3>Total Visits</h3>
+
+                    <h2>18</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-money-bill-wave"></i>
+
+                    <h3>Last Payment</h3>
+
+                    <h2>₱800</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- PROFILE -->
+
+        <section id="profile" class="page-section" style="display:none;">
+
+            <header>
+
+                <h1>My Profile</h1>
+
+            </header>
+
+            <div class="form-section">
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label>Full Name</label>
+
+                        <input
+                        type="text"
+                        value="Juan Dela Cruz">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Email Address</label>
+
+                        <input
+                        type="email"
+                        value="juan@gmail.com">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Contact Number</label>
+
+                        <input
+                        type="text"
+                        value="09123456789">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Address</label>
+
+                        <input
+                        type="text"
+                        value="Cainta, Rizal">
+
+                    </div>
+
+                    <button
+                    type="submit"
+                    class="btn">
+
+                        Save Changes
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- MEMBERSHIP -->
+
+        <section id="membership" class="page-section" style="display:none;">
+
+            <header>
+
+                <h1>My Membership</h1>
+
+            </header>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <i class="fa-solid fa-id-card"></i>
+
+                    <h3>Plan</h3>
+
+                    <h2>Monthly</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <h3>Status</h3>
+
+                    <h2>Active</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    <h3>Start Date</h3>
+
+                    <h2>July 1, 2026</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-hourglass-end"></i>
+
+                    <h3>Expiration</h3>
+
+                    <h2>July 31, 2026</h2>
+
+                </div>
+
+            </div>
+
+            <div class="table-section">
+
+                <h2>Membership Information</h2>
+
+                <table>
+
+                    <tbody>
+
+                        <tr>
+
+                            <th>Membership ID</th>
+
+                            <td>MS001</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Plan</th>
+
+                            <td>Monthly</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Amount</th>
+
+                            <td>₱800</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Status</th>
+
+                            <td>Active</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Expiration Date</th>
+
+                            <td>July 31, 2026</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <br>
+
+                <button class="add-btn">
+
+                    <i class="fa-solid fa-arrows-rotate"></i>
+
+                    Request Renewal
+
+                </button>
+
+            </div>
+
+        </section>
+                <!-- ATTENDANCE -->
+
+        <section id="attendance" class="page-section" style="display:none;">
+
+            <header>
+
+                <h1>My Attendance</h1>
+
+            </header>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <h3>Total Visits</h3>
+
+                    <h2>18</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <h3>Total Hours</h3>
+
+                    <h2>36 hrs</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-calendar-week"></i>
+
+                    <h3>This Month</h3>
+
+                    <h2>9</h2>
+
+                </div>
+
+            </div>
+
+            <div class="table-section">
+
+                <h2>Attendance History</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+                            <th>Time In</th>
+                            <th>Time Out</th>
+                            <th>Duration</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>July 9, 2026</td>
+                            <td>7:00 AM</td>
+                            <td>9:00 AM</td>
+                            <td>2 Hours</td>
+                            <td>Completed</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>July 8, 2026</td>
+                            <td>6:45 AM</td>
+                            <td>8:30 AM</td>
+                            <td>1 Hour 45 Minutes</td>
+                            <td>Completed</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>July 6, 2026</td>
+                            <td>5:30 PM</td>
+                            <td>7:15 PM</td>
+                            <td>1 Hour 45 Minutes</td>
+                            <td>Completed</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- PAYMENTS -->
+
+        <section id="payments" class="page-section" style="display:none;">
+
+            <header>
+
+                <h1>My Payments</h1>
+
+            </header>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    <h3>Total Payments</h3>
+
+                    <h2>₱11,200</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-receipt"></i>
+
+                    <h3>Transactions</h3>
+
+                    <h2>8</h2>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <h3>Status</h3>
+
+                    <h2>Paid</h2>
+
+                </div>
+
+            </div>
+
+            <div class="table-section">
+
+                <h2>Payment History</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Receipt No.</th>
+                            <th>Plan</th>
+                            <th>Amount</th>
+                            <th>Method</th>
+                            <th>Date Paid</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>RC001</td>
+                            <td>Monthly</td>
+                            <td>₱800</td>
+                            <td>Cash</td>
+                            <td>July 1, 2026</td>
+                            <td>Paid</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>RC002</td>
+                            <td>Monthly</td>
+                            <td>₱800</td>
+                            <td>GCash</td>
+                            <td>June 1, 2026</td>
+                            <td>Paid</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>RC003</td>
+                            <td>Monthly</td>
+                            <td>₱800</td>
+                            <td>Cash</td>
+                            <td>May 1, 2026</td>
+                            <td>Paid</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+                <!-- ANNOUNCEMENTS -->
+
+        <section id="announcements" class="page-section" style="display:none;">
+
+            <header>
+
+                <h1>Announcements</h1>
+
+            </header>
+
+            <div class="announcement-card">
+
+                <h3>
+
+                    Gym Closed This Sunday
+
+                </h3>
+
+                <p>
+
+                    The gym will be closed this Sunday due to scheduled maintenance.
+                    Regular operations will resume on Monday.
+
+                </p>
+
+                <small>
+
+                    Posted: July 9, 2026
+
+                </small>
+
+            </div>
+
+            <br>
+
+            <div class="announcement-card">
+
+                <h3>
+
+                    20% Annual Membership Promo
+
+                </h3>
+
+                <p>
+
+                    Upgrade your membership this month and enjoy a 20% discount.
+
+                </p>
+
+                <small>
+
+                    Posted: July 5, 2026
+
+                </small>
+
+            </div>
+
+            <br>
+
+            <div class="announcement-card">
+
+                <h3>
+
+                    Free Zumba Every Saturday
+
+                </h3>
+
+                <p>
+
+                    Join our free Zumba class every Saturday at 6:00 AM.
+                    All active members are welcome.
+
+                </p>
+
+                <small>
+
+                    Posted: July 1, 2026
+
+                </small>
+
+            </div>
+
+        </section>
+
+        <!-- SETTINGS -->
+
+        <section id="settings" class="page-section" style="display:none;">
+
+            <header>
+
+                <h1>Account Settings</h1>
+
+            </header>
+
+            <div class="form-section">
+
+                <h2>Update Profile</h2>
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label>Full Name</label>
+
+                        <input
+                        type="text"
+                        value="Juan Dela Cruz">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Email Address</label>
+
+                        <input
+                        type="email"
+                        value="juan@gmail.com">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Contact Number</label>
+
+                        <input
+                        type="text"
+                        value="09123456789">
+
+                    </div>
+
+                    <button
+                    type="submit"
+                    class="btn">
+
+                        Save Changes
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="form-section">
+
+                <h2>Change Password</h2>
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label>Current Password</label>
+
+                        <input
+                        type="password"
+                        placeholder="Current Password">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>New Password</label>
+
+                        <input
+                        type="password"
+                        placeholder="New Password">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Confirm Password</label>
+
+                        <input
+                        type="password"
+                        placeholder="Confirm Password">
+
+                    </div>
+
+                    <button
+                    type="submit"
+                    class="btn">
+
+                        Update Password
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
